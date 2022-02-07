@@ -1,17 +1,19 @@
 import { Shape } from "./index";
 
-let root = document.getElementById("root");
+let circleP = document.getElementById("circle");
+let triangleP = document.getElementById("triangle");
+let rectangleP = document.getElementById("rectangle");
 
 function getArea(object: Shape) {
   switch (object.type) {
     case "circle":
-      root.innerText = `Circle area is ${getCircleArea(object.pi, object.radius).toString()}`;
+      circleP.innerText = `Circle area is ${getCircleArea(object.pi, object.radius).toString()}`;
       break;
     case "triangle":
-      root.innerText = `Triangle area is ${getTriangleArea(object.base, object.height).toString()}`;
+      triangleP.innerText = `Triangle area is ${getTriangleArea(object.base, object.height).toString()}`;
       break;
     case "rectangle":
-      root.innerText = `Rectangle area is ${getRectangleArea(object.width, object.length).toString()}`;
+      rectangleP.innerText = `Rectangle area is ${getRectangleArea(object.width, object.length).toString()}`;
       break;
   }
 }

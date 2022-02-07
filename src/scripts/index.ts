@@ -40,10 +40,12 @@ let rectangle: RectangleArea = {
 
 let triangle: TriangleArea = {
   type: Figure.triangle,
-  height: 15,
+  height: 25,
   base: 20,
 };
 
 getArea(triangle);
+getArea(circle);
+getArea(rectangle);
 
 export { Shape };
