@@ -5,7 +5,7 @@ const path = require("path");
 const middleware = require("webpack-dev-middleware");
 const open = require("open");
 
-const PORT = 8080;
+const PORT = 3000;
 
 const compiler = webpack(config);
 const server = express();

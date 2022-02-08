@@ -18,14 +18,14 @@ function getArea(object: Shape) {
   }
 }
 
-function getRectangleArea(height, width) {
+function getRectangleArea(height: number, width: number) {
   return height * width;
 }
 
-function getTriangleArea(height, base) {
+function getTriangleArea(height: number, base: number) {
   return (height * base) / 2;
 }
-function getCircleArea(pi, radius) {
+function getCircleArea(pi: number, radius: number) {
   return pi * Math.pow(radius, 2);
 }
 

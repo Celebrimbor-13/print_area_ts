@@ -1,5 +1,7 @@
 import { getArea } from "./area";
 
+const PI_NUM = Math.PI;
+
 enum Figure {
   circle = "circle",
   rectangle = "rectangle",
@@ -8,7 +10,7 @@ enum Figure {
 
 interface CircleArea {
   type: Figure.circle;
-  pi: 3.14;
+  pi: number;
   radius: number;
 }
 
@@ -28,19 +30,19 @@ type Shape = CircleArea | RectangleArea | TriangleArea;
 
 let circle: CircleArea = {
   type: Figure.circle,
-  pi: 3.14,
-  radius: 5,
+  pi: PI_NUM,
+  radius: 4,
 };
 
 let rectangle: RectangleArea = {
   type: Figure.rectangle,
-  length: 10,
-  width: 15,
+  length: 11,
+  width: 7,
 };
 
 let triangle: TriangleArea = {
   type: Figure.triangle,
-  height: 25,
+  height: 4,
   base: 20,
 };
 
