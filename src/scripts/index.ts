@@ -22,32 +22,34 @@ interface RectangleArea {
 
 interface TriangleArea {
   type: Figure.triangle;
-  height: number;
-  base: number;
+  sideOne: number;
+  sideTwo: number;
+  sideThree: number;
 }
 
 type Shape = CircleArea | RectangleArea | TriangleArea;
 
-let circle: CircleArea = {
+let circle: Shape = {
   type: Figure.circle,
   pi: PI_NUM,
   radius: 4,
 };
 
-let rectangle: RectangleArea = {
+let rectangle: Shape = {
   type: Figure.rectangle,
   length: 11,
   width: 7,
 };
 
-let triangle: TriangleArea = {
+let triangle: Shape = {
   type: Figure.triangle,
-  height: 4,
-  base: 20,
+  sideOne: 5,
+  sideTwo: 3,
+  sideThree: 7,
 };
 
 getArea(triangle);
 getArea(circle);
 getArea(rectangle);
 
-export { Shape };
+export { Shape, Figure };
